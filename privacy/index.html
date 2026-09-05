@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{BRAND}} Privacy Policy</title>
-<meta name="description" content="Privacy policy for the {{BRAND}} load board app for iPhone and Android.">
+<meta name="description" content="What the {{BRAND}} load board app collects (location, optional account, push token, subscription status), which services it shares data with, and how to delete your data.">
 <link rel="canonical" href="{{ORIGIN}}/privacy/">
 <meta name="robots" content="noindex, follow">
 <meta property="og:type" content="website">
@@ -43,31 +43,92 @@
 <main class="wrap">
   <p class="breadcrumbs"><a href="/">{{BRAND}}</a> › Privacy Policy</p>
   <article class="guide">
-    <h1>Privacy Policy for {{BRAND}}</h1>
-    <p class="muted">Effective Date: March 09, 2025</p>
-    <p>Thank you for using {{BRAND}}! Your privacy is important to us. This Privacy Policy explains how we handle your information when you use our app.</p>
-    <p>In short: we don't collect any personal data from you.</p>
+    <h1>{{BRAND}} Privacy Policy</h1>
+    <p class="muted">Effective date: September 5, 2026. This policy replaces the earlier version dated March 9, 2025.</p>
+    <p>{{BRAND}} is a load board app for iPhone and Android made by {{COMPANY}} ("we", "us"). This policy explains what information the app and this website collect, why, who it is shared with, and the choices you have. The short version: the app needs your location to show loads near you, keeps an optional account if you create one, uses a few third-party services to run subscriptions, notifications and advertising measurement, and never sells your personal information.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>We do not collect, store, or process any personal data or personally identifiable information (PII) from users of {{BRAND}}. The app operates without requiring or gathering any data such as your name, email address, location, device information, or usage data.</p>
+    <h2>1. Information the app collects</h2>
+    <h3>Location</h3>
+    <p>With your permission, the app reads your device's current location while you are using it, to sort loads by distance from your truck, draw the map around you, and pick which loads go into your daily load alerts. We store only your most recent coordinates and the time they were recorded, in our database, so that alerts can be sent while the app is closed. We do not track your location in the background and we do not keep a history of where you have been. You can turn location off in your device settings at any time; the app then falls back to sorting by rate.</p>
+    <h3>Account information (optional)</h3>
+    <p>You can browse loads without an account. If you create one, we store the email address and password you sign up with (the password is handled by Firebase Authentication and never stored in a form we can read), the date the account was created, your alert preferences, your cost-per-mile setting, your last location, your push notification token, and whether you hold an active subscription.</p>
+    <h3>Anonymous device record</h3>
+    <p>When the app is first installed it generates a random identifier for the device. We use it, whether or not you have an account, to store your push notification token, your last location for alerts, and a few engagement counters (number of sessions, loads viewed, shippers contacted, and whether the review prompt has been shown). This identifier is not derived from your phone's hardware or advertising IDs, and a reinstall generates a new one.</p>
+    <h3>Subscription status</h3>
+    <p>If you subscribe to Premium, Apple or Google process the payment. We never see your card or bank details. Our subscription provider, RevenueCat, receives the purchase receipt, an anonymous RevenueCat identifier and, if you are signed in, your account identifier, and tells the app whether your subscription is active.</p>
+    <h3>Usage and crash information</h3>
+    <p>The app increments daily aggregate counters (for example how many times the app was opened or a load was viewed across all users) that contain no identifiers. If the app crashes or hits an unexpected error in a production build, it records the error message, the screen it came from, your platform (iOS or Android) and the app version. We use this only to fix bugs.</p>
+    <h3>Calls to shippers</h3>
+    <p>Tapping Call Now opens your phone's dialer. We record that a contact was made, for the engagement counters above, but we do not record, listen to, or store the call itself or the number you dialled.</p>
 
-    <h2>2. How We Use Information</h2>
-    <p>Since we don't collect any data, there's no information for us to use, share, or process.</p>
+    <h2>2. How we use information</h2>
+    <ul>
+      <li>To show loads near you, sorted by distance, rate or estimated profit.</li>
+      <li>To send the daily load alerts you turn on, for the radius you choose.</li>
+      <li>To keep your settings and subscription status in sync across devices when you sign in.</li>
+      <li>To measure, in aggregate, how the app is used and to find and fix crashes.</li>
+      <li>To measure whether our advertising leads to installs and subscriptions (see Meta below).</li>
+      <li>To respond when you contact us.</li>
+    </ul>
+    <p>We do not sell personal information, and we do not use your location or contact details for advertising.</p>
 
-    <h2>3. Third-Party Services</h2>
-    <p>{{BRAND}} does not integrate with third-party services that collect user data (e.g., analytics tools, advertising networks). All functionality is self-contained within the app.</p>
+    <h2>3. Third parties we share information with</h2>
+    <p>We use the following service providers. Each one receives only what it needs to do its job and is bound by its own privacy policy.</p>
+    <div class="table-wrap">
+    <table>
+      <tr><th>Service</th><td><b>What it does</b></td><td><b>What it receives</b></td></tr>
+      <tr><th>Google Firebase</th><td>Hosts our database and sign-in (servers in the United States)</td><td>Everything listed in section 1 that we store</td></tr>
+      <tr><th>Expo push service</th><td>Delivers push notifications</td><td>Your push token and the notification text</td></tr>
+      <tr><th>RevenueCat</th><td>Manages subscriptions</td><td>Purchase receipts, subscription status, an anonymous ID and your account ID if signed in</td></tr>
+      <tr><th>Apple App Store / Google Play</th><td>Process payments</td><td>Your payment details, which we never see</td></tr>
+      <tr><th>Meta (Facebook SDK)</th><td>Measures advertising results</td><td>App events such as app open, trial started and subscription purchased (with price), plus device information and, where your device settings allow it, the device's advertising identifier</td></tr>
+      <tr><th>Apple Maps (iOS) / Google Maps (Android)</th><td>Draw the map</td><td>Map requests for the area you are viewing, under Apple's or Google's own policies</td></tr>
+      <tr><th>Canny</th><td>Collects feedback you choose to send from the Feedback tab</td><td>Whatever you type there; Canny's privacy policy applies</td></tr>
+    </table>
+    </div>
+    <p>The Meta SDK is the only service that uses information for advertising purposes. You can limit it on iOS under Settings → Privacy &amp; Security → Tracking, and on Android under Settings → Google → Ads (reset or delete your advertising ID). Under some state privacy laws this sharing may count as "sharing" for cross-context advertising; those device settings are the opt-out.</p>
+    <p>We may also disclose information if the law requires it, or to protect the rights and safety of our users or ourselves.</p>
 
-    <h2>4. Data Storage and Security</h2>
-    <p>Because no data is collected, we do not store or secure any user information. There are no servers, databases, or cloud services involved in handling user data.</p>
+    <h2>4. Load postings and shipper information</h2>
+    <p>The loads in the app are postings that shippers and brokers make publicly, including business names and phone numbers. We collect them from public load boards and refresh them every hour. If you are a shipper or broker and want a posting removed or corrected, email us and we will take it down.</p>
 
-    <h2>5. Children's Privacy</h2>
-    <p>Our app does not collect data from any users, including children. It is designed to be safe and compliant with laws like the Children's Online Privacy Protection Act (COPPA).</p>
+    <h2>5. How long we keep information</h2>
+    <ul>
+      <li><b>Account data</b> stays until you delete the account (see section 7).</li>
+      <li><b>Device records</b> (push token, last location, counters) stay while the device keeps using the app. A device that stops sending updates is left with its last values; email us to have a record removed.</li>
+      <li><b>Last location</b> is overwritten each time it is updated; we keep only the latest.</li>
+      <li><b>Crash reports and aggregate counters</b> are kept for troubleshooting and trend analysis and contain no account information.</li>
+      <li><b>Subscription records</b> are kept by RevenueCat and the app stores for as long as their policies require.</li>
+    </ul>
 
-    <h2>6. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time to reflect changes in our app or legal requirements. Any updates will be posted here with a revised "Effective Date." We encourage you to check this page periodically.</p>
+    <h2>6. Security</h2>
+    <p>Data travels between the app and our servers over encrypted connections. Our database is protected by access rules so that only your signed-in session can read or change your own account data. No system is perfectly secure, so we cannot promise that information will never be lost or accessed without authorization.</p>
 
-    <h2>7. Contact Us</h2>
-    <p>If you have any questions or concerns about this Privacy Policy, feel free to reach out to us at <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>.</p>
+    <h2>7. Your choices and rights</h2>
+    <ul>
+      <li><b>Location:</b> allow or deny it in your device's settings for {{BRAND}}.</li>
+      <li><b>Notifications:</b> turn daily load alerts off in the Profile tab, or block notifications in your device settings.</li>
+      <li><b>Delete your account:</b> Profile tab → Delete Account removes your account data from our database and deletes your sign-in. You can also email <a href="mailto:{{CONTACT_EMAIL}}?subject=Account%20Deletion%20Request">{{CONTACT_EMAIL}}</a> with the subject "Account Deletion Request" from the address you signed up with.</li>
+      <li><b>Delete your device record:</b> deleting the app stops all updates; to have the stored record erased, email us.</li>
+      <li><b>Access, correction and portability:</b> email us and we will send you a copy of the information we hold about you or correct it.</li>
+      <li><b>Subscriptions:</b> cancel any time through your Apple ID or Google Play subscription settings.</li>
+    </ul>
+    <p>Residents of California, the European Economic Area, the United Kingdom and other places with privacy laws have additional rights, including the right to complain to a supervisory authority. We honour these requests for everyone regardless of where you live. We will not treat you differently for exercising them.</p>
+
+    <h2>8. This website</h2>
+    <p>{{DOMAIN}} uses Google Analytics to count visits and see which pages are read. Google sets its own cookies for this and may collect your IP address and device information under Google's privacy policy. The site sets no other cookies. Links to the App Store and Google Play take you to Apple's and Google's sites, which have their own policies.</p>
+
+    <h2>9. Children</h2>
+    <p>{{BRAND}} is a tool for commercial drivers and is not directed at children under 13. We do not knowingly collect information from children; if you believe a child has provided us information, email us and we will delete it.</p>
+
+    <h2>10. International users</h2>
+    <p>Our services are operated from the United States and information is stored there. If you use the app from outside the United States, you consent to your information being transferred to and processed in the United States.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>We will post any changes on this page and update the effective date at the top. If a change materially reduces your rights, we will also notify you in the app.</p>
+
+    <h2>12. Contact</h2>
+    <p>{{COMPANY}} · <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
   </article>
 </main>
 
