@@ -4,8 +4,8 @@
 // sitemap.xml from ORIGIN/LASTMOD). The plugin only matches [A-Z_]+ keys.
 export const SITE = {
   BRAND: 'Freight Finder',
-  DOMAIN: 'freightfinderapp.com',
-  ORIGIN: 'https://freightfinderapp.com',
+  DOMAIN: 'freightfinder.app',
+  ORIGIN: 'https://freightfinder.app',
   APP_ID: '849725731', // Apple App Store numeric id (Smart App Banner)
   IOS_URL: 'https://apps.apple.com/app/id849725731',
   PLAY_URL: 'https://play.google.com/store/apps/details?id=com.freightfinderapp',
