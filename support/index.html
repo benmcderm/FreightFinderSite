@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{BRAND}} Support — Help with the Load Board App</title>
+<meta name="description" content="Help for the {{BRAND}} load board app: subscriptions and restoring purchases, location and alerts, load details, and how to contact us.">
+<link rel="canonical" href="{{ORIGIN}}/support/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{BRAND}} Support">
+<meta property="og:url" content="{{ORIGIN}}/support/">
+<link rel="icon" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/app-icon.png">
+<link rel="stylesheet" href="/site.css">
+<meta name="apple-itunes-app" content="app-id={{APP_ID}}">
+<meta property="og:site_name" content="{{BRAND}}">
+<meta property="og:image" content="{{ORIGIN}}/img/og-image.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{GA_MEASUREMENT_ID}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(js, new Date());
+  gtag(config, '{{GA_MEASUREMENT_ID}}');
+</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <img src="/img/app-icon.png" alt="" width="36" height="36">
+    <a class="name" href="/">{{BRAND}}</a>
+    <nav>
+      <a href="/load-board-app/">Guides</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/support/">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="breadcrumbs"><a href="/">{{BRAND}}</a> › Support</p>
+  <article class="guide">
+    <h1>{{BRAND}} Support</h1>
+    <p class="muted">Answers to the questions we get most. If yours isn't here, email <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a> or use the <b>Feedback</b> tab inside the app; include your device and app version if you're reporting a problem.</p>
+
+    <h2>Subscriptions</h2>
+    <h3>What does Premium include?</h3>
+    <p>Every load on the board, contact details and the Call Now button, nearest-first sorting, and priority daily load alerts. Premium is {{PRICE_MONTH}} per month or {{PRICE_YEAR}} per year and starts with a free trial.</p>
+    <h3>I paid but the app still says I'm not Premium</h3>
+    <p>Open the <b>Profile</b> tab and tap <b>Restore Purchases</b>. Make sure you're signed in to the same Apple ID or Google account you bought with. If it still doesn't unlock, email us with the receipt from Apple or Google and we'll sort it out.</p>
+    <h3>How do I cancel?</h3>
+    <p>Subscriptions are managed by Apple or Google, not by us. On iPhone: Settings → your name → Subscriptions → {{BRAND}}. On Android: Google Play → profile → Payments &amp; subscriptions → Subscriptions. Cancelling stops the next renewal; the current period stays active until it ends.</p>
+    <h3>Refunds</h3>
+    <p>Apple and Google handle refunds for purchases made through their stores. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> or through Google Play's order history.</p>
+
+    <h2>Loads and location</h2>
+    <h3>The map is empty or loads are far away</h3>
+    <p>Check that location access is allowed for {{BRAND}} in your phone's settings, then pull down on the Loads list to refresh. The board is rebuilt every hour, so a thin market can genuinely have few loads; try widening the map or switching the sort to Best rate.</p>
+    <h3>Why is a rate marked "est."?</h3>
+    <p>The shipper or broker didn't post a rate. The estimate is based on national average spot rates for that equipment type and trip length, rounded down to stay conservative. Confirm the real rate on the phone.</p>
+    <h3>A load is gone or the number doesn't answer</h3>
+    <p>Loads are public postings that can be covered at any time. Stale loads drop off within the hour; if a number is disconnected or wrong, tell us through Feedback and we'll remove the posting.</p>
+    <h3>Daily load alerts aren't arriving</h3>
+    <p>In <b>Profile</b>, turn on <b>Daily load alerts</b> and choose a radius (50 to 300 miles). Then check that notifications are allowed for {{BRAND}} in your phone's settings.</p>
+
+    <h2>Account and data</h2>
+    <h3>Do I need an account?</h3>
+    <p>No. Browsing works without one. An account is only needed if you want your settings synced across devices.</p>
+    <h3>Delete my account</h3>
+    <p>Email <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a> from the address you signed up with and we'll delete the account and its data. See the <a href="/privacy/">privacy policy</a>.</p>
+
+    <h2>Contact</h2>
+    <p>Email <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>. {{BRAND}} is made by {{COMPANY}}.</p>
+  </article>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="/load-board-app/">Best load board apps</a>
+      <a href="/how-to-find-loads/">How to find loads</a>
+      <a href="/truck-loads-near-me/">Truck loads near me</a>
+      <a href="/free-load-boards/">Free load boards</a>
+      <a href="/trucking-rate-per-mile/">Rate per mile</a>
+      <a href="{{IOS_URL}}">{{BRAND}} for iPhone</a>
+      <a href="{{PLAY_URL}}">{{BRAND}} for Android</a>
+      <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Use</a>
+      <a href="mailto:{{CONTACT_EMAIL}}">Contact</a>
+    </nav>
+    <p class="disclaimer">{{BRAND}} is made by {{COMPANY}}. It is not a freight broker and is not affiliated with freightfinder.com or with any load board whose public postings appear in the app.</p>
+    <p class="disclaimer">Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc. App Store is a service mark of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+  </div>
+</footer>
+
+</body>
+</html>
