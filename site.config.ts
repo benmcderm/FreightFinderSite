@@ -18,7 +18,7 @@ export const SITE = {
   // per Google account, not per site — same value carbles.app uses).
   GSC_VERIFICATION: 'EyaN4qlOMBFwTgKrwpPrx6VJ4vt2A3POfEt4VMkQ2V4',
   // GA4 web stream for this site (property "Freight Finder website", account McD).
-  GA_MEASUREMENT_ID: 'G-XXXXXXXXXX',
+  GA_MEASUREMENT_ID: 'G-J6H7SM2ZEG',
 } as const;
 
 export const SITEMAP_PATHS = [
